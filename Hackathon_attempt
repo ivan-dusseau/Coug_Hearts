@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet">
+   <style>
+      * {
+      box-sizing: border-box;
+      }
+      body {
+      background-color: #53565A;
+      }
+      #regForm {
+      background-color: #A23446;
+      margin: 100px auto;
+      padding: 8%;
+      width: 70%;
+      min-width: 300px;
+      }
+      h1 {
+      text-align: center;  
+      }
+      h4{
+      background-color:rgba(45, 45, 45, 0.2);
+      margin-bottom: 0%;
+      }
+      input {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      border: 1px solid #aaaaaa;
+      }
+   </style>
+   <body>
+      <form id="regForm" action="/action_page.php">
+      <h1>Questionnaire:</h1>
+      <h4>
+         I am often stressed by schoolwork:
+      </h4>
+      <br>
+      <select id="section_1">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I often feel overwhelmed by school:
+      </h4>
+      <br>
+      <select id="section_2">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I feel I have few friends:
+      </h4>
+      <br>
+      <select id="section_3">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I procrastinate and forget schoolwork:
+      </h4>
+      <br>
+      <select id="section_4">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Sometimes I don't want to get out of bed:
+      </h4>
+      <br>
+      <select id="section_5">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         My emotions are all over the place:
+      </h4>
+      <br>
+      <select id="section_6">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         The days blur together:
+      </h4>
+      <br>
+      <select id="section_7">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I constantly need breaks:
+      </h4>
+      <br>
+      <select id="section_8">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         My friends worry about me:
+      </h4>
+      <br>
+      <select id="section_9">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Without distractions I get bogged down:
+      </h4>
+      <br>
+      <select id="section_10">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Often I feel the need to cheat to keep up:
+      </h4>
+      <br>
+      <select id="section_11">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         It hurts when I compare myself to others:
+      </h4>
+      <br>
+      <select id="section_12">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Other people don't understand what I'm going through:
+      </h4>
+      <br>
+      <select id="section_13">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I can't seem to make friends on campus:
+      </h4>
+      <br>
+      <select id="section_14">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Classes make me want to give up:
+      </h4>
+      <br>
+      <select id="section_15">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         I avoid going out to not be seen:
+      </h4>
+      <br>
+      <select id="section_16">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Without other people I worry about being ok:
+      </h4>
+      <br>
+      <select id="section_17">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         My purpose on campus is constantly in question:
+      </h4>
+      <br>
+      <select id="section_18">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         Often I feel I need help I do not receive:
+      </h4>
+      <br>
+      <select id="section_19">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <h4>
+         People care about my well being:
+      </h4>
+      <br>
+      <select id="section_20">
+         <option value="5">Strongly Agree</option>
+         <option value="4">Slightly Agree</option>
+         <option value="3">Neutral </option>
+         <option value="2">Slightly Disagree</option>
+         <option value="1">Strongly Disagree</option>
+      </select>
+      <br>
+      <input id="total"/>
+
+      <script type="text/javascript">
+      
+         var section_1 = document.getElementById( "section_1" );
+         var section_2 = document.getElementById( "section_2" );
+         var section_3 = document.getElementById( "section_3" );
+         var section_4 = document.getElementById( "section_4" );
+         var section_5 = document.getElementById( "section_5" );
+         var section_6 = document.getElementById( "section_6" );
+         var section_7 = document.getElementById( "section_7" );
+         var section_8 = document.getElementById( "section_8" );
+         var section_9 = document.getElementById( "section_9" );
+         var section_10 = document.getElementById( "section_10" );
+         var section_11 = document.getElementById( "section_11" );
+         var section_12 = document.getElementById( "section_12" );
+         var section_13 = document.getElementById( "section_13" );
+         var section_14 = document.getElementById( "section_14" );
+         var section_15 = document.getElementById( "section_15" );
+         var section_16 = document.getElementById( "section_16" );
+         var section_17 = document.getElementById( "section_17" );
+         var section_18 = document.getElementById( "section_18" );
+         var section_19 = document.getElementById( "section_19" );
+         var section_20 = document.getElementById( "section_20" );
+         
+         section_1.onchange=()=>calculate();
+         section_2.onchange=()=>calculate();
+         section_3.onchange=()=>calculate();
+         section_4.onchange=()=>calculate();
+         section_5.onchange=()=>calculate();
+         section_6.onchange=()=>calculate();
+         section_7.onchange=()=>calculate();
+         section_8.onchange=()=>calculate();
+         section_9.onchange=()=>calculate();
+         section_10.onchange=()=>calculate();
+         section_11.onchange=()=>calculate();
+         section_12.onchange=()=>calculate();
+         section_13.onchange=()=>calculate();
+         section_14.onchange=()=>calculate();
+         section_15.onchange=()=>calculate();
+         section_16.onchange=()=>calculate();
+         section_17.onchange=()=>calculate();
+         section_18.onchange=()=>calculate();
+         section_19.onchange=()=>calculate();
+         section_20.onchange=()=>calculate();
+         
+         
+         function calculate(){
+         
+         section_1Value = section_1.value;
+         section_2Value = section_2.value;
+         section_3Value = section_3.value;
+         section_4Value = section_4.value;
+         section_5Value = section_5.value;
+         section_6Value = section_6.value;
+         section_7Value = section_7.value;
+         section_8Value = section_8.value;
+         section_9Value = section_9.value;
+         section_10Value = section_10.value;
+         section_11Value = section_11.value;
+         section_12Value = section_12.value;
+         section_13Value = section_13.value;
+         section_14Value = section_14.value;
+         section_15Value = section_15.value;
+         section_16Value = section_16.value;
+         section_17Value = section_17.value;
+         section_18Value = section_18.value;
+         section_19Value = section_19.value;
+         section_20Value = section_20.value;
+         
+          var sum = 0;
+          var a = +section_1Value;
+          var b = +section_2Value;
+          var c = +section_3Value;
+          var d = +section_4Value;
+          var e = +section_5Value;
+          var f = +section_6Value;
+          var g = +section_7Value;
+          var h = +section_8Value;
+          var i = +section_9Value;
+          var j = +section_10Value;
+          var k = +section_11Value;
+          var l = +section_12Value;
+          var m = +section_13Value;
+          var n = +section_14Value;
+          var o = +section_15Value;
+          var p = +section_16Value;
+          var q = +section_17Value;
+          var r = +section_18Value;
+          var s = +section_19Value;
+          var t = +section_20Value;
+          
+          sum = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t;
+          document.getElementById("total").value = sum;
+          }
+          
+           calculate()
+
+      </script>
+   </body>
+</html>
+
